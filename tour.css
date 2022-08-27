@@ -29,6 +29,8 @@
     box-sizing: border-box;
     line-height: 40px;
     padding-left: 10px;
+    font-size: 14px;
+    height: fit-content;
 }
 
 .s-status {
@@ -40,6 +42,13 @@
     padding-left: 5px; line-height: 30px; border-radius: 6px;
     background-color: rgb(221, 59, 59);
     color: white; font-weight: 400;
+}
+
+@media all and (max-width: 340px) {
+    .s-status {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
 }
 
 #hold-place {
