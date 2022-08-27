@@ -68,7 +68,7 @@
 
 .note1 {
   font-family: 'Segoe UI';
-  padding-top: 50px;
+  padding-top: 50px 10px 0px 10px;
   width: 50%;
   min-width: 400px;
   height: fit-content;
