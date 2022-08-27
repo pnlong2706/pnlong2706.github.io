@@ -52,6 +52,7 @@
 .h-place {
     width: 30%;
     max-width: 223px;
+    min-width: 160px;
     height: fit-content;  background-color: rgb(255, 255, 255);
     margin: 8px;
     text-align: left;
@@ -64,7 +65,7 @@
 }
 
 .buy-tic {
-    width: 70%; height: 35px; background-color: black; color: aliceblue;
+    width: 50%; height: 35px; background-color: black; color: aliceblue;
     margin: 13px; line-height: 33px; text-align: center;
     cursor: pointer;
 }
