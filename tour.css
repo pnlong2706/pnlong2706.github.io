@@ -64,7 +64,7 @@
 }
 
 .buy-tic {
-    width: 50%; height: 35px; background-color: black; color: aliceblue;
+    width: 70%; height: 35px; background-color: black; color: aliceblue;
     margin: 13px; line-height: 33px; text-align: center;
     cursor: pointer;
 }
