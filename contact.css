@@ -1,6 +1,6 @@
 #contact {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 70px; margin-bottom: 30px;
 }
 
 #contact-box p {
@@ -17,13 +17,12 @@
     width: 25%;
     min-width: 270px;
     font-size: 14px;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #mailing {
-    width: 25%;
+    width: 35%;
     min-width: 200px;
-    margin-top: 30px;
 }
 
 #mailing input {
