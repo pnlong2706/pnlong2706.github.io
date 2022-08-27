@@ -10,15 +10,17 @@
 #contact-box {
     display: flex;
     width: 100%; height: fit-content; justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 80px;
 }
 #address {
-    width: 30%;
+    width: 25%;
     min-width: 270px;
+    font-size: 14px;
 }
 
 #mailing {
-    width: 30%;
+    width: 25%;
     min-width: 200px;
    
 }
