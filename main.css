@@ -4,3 +4,12 @@
 @import "tour.css";
 @import "buytable.css";
 @import "contact.css";
+
+@media all and (max-width: 620px) {
+    #minu {
+        display: none;
+    }
+    #menu #three-stick {
+        display: block;
+    }
+}
