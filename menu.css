@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#menu {
+    height: 45px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+}
+
+#menu li a, #pay {
+    display: block;
+    margin-right: -5px;
+    text-decoration: none;
+    color: rgb(242, 247, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 45px;
+    /* border: 2px solid red; */
+}
+
+#menu li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+#menu li a:hover,  #pay:hover {
+     background-color: rgb(231, 225, 255);
+    color: black;
+    transition: background-color 0.7s, color 0.4s;
+    
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+}
+
+.sub:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    background-color: black;
+    width: 150px;
+    height: 40px;
+}
+
+#menu .sub-menu a {
+    margin-right: 0;
+    text-align: left;
+    line-height: 37px;
+    font-size: 0.87rem;
+}
+
+ #menu .sub-menu a:hover {
+    
+    font-size: 0.87rem;
+    background-color: black;
+    color: rgb(242, 247, 255);
+} 
+
+#menu .sub-menu a::after {
+    display: block;
+    content: "";
+    border-bottom: 3px solid rgb(242, 247, 255); 
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out; 
+}
+
+#menu .sub-menu a:hover:after {
+    transform: scaleX(1.3);
+} 
+
+
+

@@ -1,0 +1,30 @@
+#search{
+    margin-top: 7px;
+    margin-right: 8px;
+    height: 31px;
+    width: 40px;
+    max-width: 300px;
+    border-radius: 15px;
+    min-width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('images/seaa.png');
+    background-size: 21px;
+    background-position: 10px;
+    background-position-x: 95%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    transition: 0.8s;
+    padding-left: 7px;
+    color: rgb(21, 18, 61);
+}
+
+#search:hover {
+    background-color: grey;
+    width: 30%;
+}
+
+#search:focus {
+    background-color: grey;
+    width: 30%;
+}

@@ -1,0 +1,81 @@
+.tour {
+    background-color: black;
+    margin-top: 15vh;
+    width: 100%;
+    height: fit-content;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+#tour-inf {
+    text-align: center;
+}
+#tb {display: flex; justify-content: center; }
+.sche {
+    padding-top: 40px;
+    max-width: 700px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sche li {
+    list-style-type: none;
+    text-align: left;
+    background-color: white;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    color: gray;
+    box-sizing: border-box;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.s-status {
+    float: right;
+    padding-right: 10px;
+    width: fit-content;
+    margin-top: 5px; margin-right: 5px;
+    height: 30px;
+    padding-left: 5px; line-height: 30px; border-radius: 6px;
+    background-color: rgb(221, 59, 59);
+    color: white; font-weight: 400;
+}
+
+#hold-place {
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center; flex-wrap: wrap; margin-top: 30px;
+}
+
+.h-place {
+    width: 30%;
+    max-width: 223px;
+    height: fit-content;  background-color: rgb(255, 255, 255);
+    margin: 8px;
+    text-align: left;
+}
+
+.h-place p {
+    color: black;
+    font-size: 16px;
+    margin: 12px;
+}
+
+.buy-tic {
+    width: 50%; height: 35px; background-color: black; color: aliceblue;
+    margin: 13px; line-height: 33px; text-align: center;
+    cursor: pointer;
+}
+
+.buy-tic:hover {
+    background-color: rgb(175, 175, 175); color: black;
+}
+
+.h-place > img {background-color: black;}
+.h-place> img:hover {
+    opacity: 0.7;
+}
+
+

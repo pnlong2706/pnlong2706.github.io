@@ -1,0 +1,71 @@
+#contact {
+    text-align: center;
+    margin-top: 70px; margin-bottom: 30px;
+}
+
+#contact-box p {
+    line-height: 20px;
+}
+
+#contact-box {
+    display: flex;
+    width: 100%; height: fit-content; justify-content: center;
+    margin-bottom: 80px;
+}
+#address {
+    width: 30%;
+    min-width: 270px;
+}
+
+#mailing {
+    width: 30%;
+    min-width: 200px;
+   
+}
+
+#mailing input {
+    border: 1px solid rgb(194, 194, 194);
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#name-mail input {
+    width: 48%;
+}
+.clear {
+    clear: both;
+}
+#mess input {
+    width: 100%;
+}
+
+#send {
+    float: right;
+    height: 35px;
+    width: 30%;
+    background-color: black;
+    margin-top: 20px;
+    color: aliceblue;
+    line-height: 35px; text-align: center;
+}
+#send:hover {
+    background-color: rgb(185, 185, 185);
+    color: black;
+}
+
+#map {
+    width: 100%;
+    background-image: url('images/map.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#end {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#end img:hover {
+    opacity: 0.6;
+}

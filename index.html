@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pham Ngoc Long">
+    <title> Linkin Park </title>
+    <link rel="icon" type="image/png" href="images\logo.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="buytable.js"></script>
+</head>
+<body>
+    <div id="menu" style="z-index: 1;">
+        <input id="search" type="text"> </input>
+        <ul> 
+            <li><a href="#">HOME </a> </li>
+            <li><a href="#linkin">BAND </a> </li>
+            <li><a href="#tour-inf">TOUR </a> </li>
+            <li><a href="#">CONTACT </a></li>
+            <li class="sub"><a href="#">MORE ▼ </a> 
+                 <ul class="sub-menu">
+                    <li> <a class="hg" href="#">HRIT </a> </li>
+                    <li> <a href="#">MOSSIPHERE </a> </li>
+                    <li> <a href="#">ALAN </a> </li> 
+                </ul>  
+            </li>
+        </ul>
+        <div id="he" > <div id="buytable"> 
+            <div id="he-head"> <img src="images/ticket.png" alt="" width="40px"> Tickets</div>
+            <p> <img src="images/cart.png" width="13px"> 15$ per ticket, quantity: </p>
+            <input type="text" placeholder="How many?">
+            <p><img src="images/person.png" width="13px"> Send confirm email to:</p>
+            <input type="email" placeholder="Enter email">
+            <div id="payy"> <a id="pay" href="pay.html" target="_blank"> PAY ✔  </a></div>
+            <div id="close-buy-tic">
+                <button id="button-close-buy" onclick="closeTable()"> Close ✘ </button>
+                <div id="help-buy"> Need <a href="https://www.facebook.com/Ngoclong270604/" target="_blank"> Help?</a></div>
+            </div>
+        </div> </div> 
+    </div>
+    <div class="top-img"> 
+        <img src="images/chicago.jpg" alt="Chicago" width="100%" >
+        <img  src="images/ny.jpg" alt="New York" width="100%" > 
+        <img  src="images/la.jpg" alt="Los Ageles" width="100%" >
+        <img  src="images/berlin.jpg" alt="berlin" width="100%" >
+        <div class="para-bottom"> <br> <h1>Lingkin park </h1> <br>
+           - In Memory Of Chester Bennington -
+        </div>
+   </div>
+
+   <div class="note" id="linkin"> <div class="note1">
+    <h2> THE BAND </h2>
+    <br> <p style="font-style: italic; color: gray;"> We love music </p> <br> <p style="text-align:justify;">
+    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur 
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+   </div> </div>
+   <div class="note"> 
+     <div class="member"> <p> Mike Shinoda</p> <br> <img src="images/ms.jpg" alt="Mike Shinoda" width="100%"></div>
+     <div class="member"> <p> Rob Bourdon</p> <br> <img src="images/rb.jpg" alt="Rob Bourdon" width="100%"></div>
+     <div class="member"> <p> Brad Delson</p> <br> <img src="images/bd.jpg" alt="Brad Delson" width="100%"></div>
+   </div>
+   <div class="tour">
+        <div id="tour-inf">
+            <h1> TOUR DATES </h1>
+            <br>
+            <p style="font-style: italic; color: gray;">Remember to book your tickets! </p>
+            <div id="tb"><ul class="sche">
+                <li>September - 233 st.Nicola Tesla, LA<div class="s-status"> Sold out </div></li>
+                <li>October - 319 St.Roger Bohg.dt<div class="s-status"> Sold out </div></li>
+                <li>November - NY, LA, SanF<div class="s-status"> 5 left </div></li> </div>
+            </ul>
+
+        <div id="hold-place">
+            <div class="h-place"><img src="images/newyork.jpg" width="100%">  
+            <p style="font-weight: 500;"> New York </p> <p style=" color: gray;">Fri 27 Nov 2016 </p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="buy-tic" onclick="showTable()"> Buy Tickets </button>
+            </div>
+            <div class="h-place"><img src="images/paris.jpg" width="100%">  
+            <p style="font-weight: 500;"> Paris </p> <p style=" color: gray;"> Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="buy-tic" onclick="showTable()"> Buy Tickets </button>
+            </div>
+            <div class="h-place"><img src="images/sanfran.jpg" width="100%">  
+            <p style="font-weight: 500;"> San Fransisco </p> <p style=" color: gray;">Sun 29 Nov 2016 </p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="buy-tic" onclick="showTable()"> Buy Tickets </button>
+            </div>
+        </div>
+   </div>
+   </div>
+
+<div id="contact"> <h1 style="font-weight: 350; font-size: 35px;"> CONTACT</h1> <br> <p style="font-style: italic; color: gray;">Tell me your opinion</p></div>
+<div id="contact-box">
+    <div id="address">
+        <p><img src="images/locate.png" width="15px" style="margin: 5px 16px 2px 7px;">     Thua Thien-Hue, Viet Nam</p>
+        <p><img src="images/phone.png" width="15px" style="margin: 5px 16px 2px 7px;">     Phone: +84 963812245</p>
+        <p><img src="images/mail.png" width="18px" style="margin: 5px 16px 2px 7px;">     Email: pnlong27@gmail.com</p>
+    </div>
+    <div id="mailing">
+        <div id="name-mail"><input type="text" placeholder="Name" style="float: left;"><input type="text" placeholder="Email" style="float: right;"></div>
+        <div class="clear"></div>
+        <div id="mess"><input type="text" placeholder="Messenge"></div>
+        <a href="https://mail.google.com" target="_blank"><div id="send"> Send </div> </a>
+    </div>
+</div>
+<div id="map"> <img src="images/map.jpg" width="100%"></div>
+<div id="end">
+    <a href="https://www.facebook.com/Ngoclong270604/" target="_blank"><img src="images/fb.png" width="35px"> </a>
+    <a href="https://www.facebook.com/Ngoclong270604/" target="_blank"><img src="images/ins.png" width="35px"> </a>
+    <a href="https://www.facebook.com/Ngoclong270604/" target="_blank"><img src="images/pin.png" width="35px"> </a>
+    <a href="https://www.facebook.com/Ngoclong270604/" target="_blank"><img src="images/rd.png" width="35px"> </a>
+    <a href="https://www.facebook.com/Ngoclong270604/" target="_blank"><img src="images/tw.png" width="35px"> </a>
+    <a href="https://www.facebook.com/Ngoclong270604/" target="_blank"><img src="images/ln.png" width="35px"> </a>
+    <br>
+    <br>
+    <p style=" color: gray; margin-bottom: 40px;"> Based on The band from W3scholl</p>
+</div>
+</body>
+</html>
