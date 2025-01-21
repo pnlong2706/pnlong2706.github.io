@@ -190,6 +190,13 @@ function Home() {
                     <button class = "round-button bg-blueberry-milk" > Detail </button>
                 </div>
             </div>
+            
+            <div id = "hidden-trash">
+                <img src = "skill-1.png" alt = "none" />
+                <img src = "skill-2.png" alt = "none" />
+                <img src = "skill-3.png" alt = "none" />
+                <img src = "skill-4.png" alt = "none" />
+            </div>
 
         </div>
     )
