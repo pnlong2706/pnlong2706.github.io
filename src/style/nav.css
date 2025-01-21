@@ -1,0 +1,104 @@
+#nav-bar {
+    justify-items: end;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    /* border: 2px solid red;    */
+    height: 64px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+    transition: 0.6s;
+    background-color: rgba(236, 242, 249, 0);
+}
+
+#nav-bar > div {
+    /* border: 2px solid blue; */
+    padding-right: 100px;
+}
+
+#nav-bar > div > .nav-tab {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 64px;
+    border-bottom: 2px solid rgb(198, 63, 101, 0);
+    /* border-image: linear-gradient(to right, rgb(198, 63, 101, 1) 10%, transparent 10%) 100% 1; */
+    margin-right: 30px;
+    transition: 0.3s;
+}
+ 
+#nav-bar > div > .nav-tab:hover {
+    color:  rgb(198 63 101);
+    border-bottom: 2px solid rgb(198, 63, 101, 1);
+    /* border-image: linear-gradient(to right, rgb(198, 63, 101, 1) 100%, transparent 100%) 100% 1; */
+    transition: 0.3s;
+}
+
+.nav-tab-com-responsive {
+    display: none;
+}
+
+#second-wrapper > p {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    #nav-bar {
+        height: 48px;
+        /* border: 2px solid green; */
+    }
+
+    .nav-tab-com-responsive {
+        justify-items: center;
+        height: 48px;
+        padding-top: 9px;
+        /* border: 2px solid green; */
+        display: block;
+    }
+
+    @keyframes slideleft {
+        from {opacity: 0; right: -50vw;}
+        to {opacity: 1; right: 0px;}
+    }
+
+    #second-wrapper > p {
+        display: block;
+    }
+
+    #second-wrapper {
+        justify-content: end;
+        padding-right: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 10px;
+        height: 110vh;
+        width: 35vw;
+        background-color: rgb(254 254 254);
+        position: relative;
+        top: -80px;
+        right: -50vw;
+        padding-left: 20px;
+        transition: all 0.5s;
+    }
+
+    #nav-bar > div > .nav-tab {
+        display: block;
+        /* text-align: right; */
+        /* border: 2px solid green; */
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 32px;
+        margin-right: 0px;
+    }
+
+    #nav-bar > div {
+        /* border: 2px solid blue; */
+        padding-right: 20px;
+    }
+
+    #second-wrapper > p {
+        /* border: 2px solid green; */
+        text-align: right;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-right: 0px;
+    }
+}

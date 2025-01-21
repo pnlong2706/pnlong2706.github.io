@@ -1,0 +1,58 @@
+@import url("style/home.css");
+@import url("style/nav.css");
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-blueberry-milk {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 242 249 / var(--tw-bg-opacity));
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgb(198 63 101 / var(--tw-text-opacity));
+}
+
+.round-button {
+  color: rgb(236 242 249);
+  font-size: 1.3rem;
+  font-weight: 700;
+  min-width: 120px;;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: rgb(91 94 130);
+  border-radius: 1.5rem;
+  border: 0px;
+  transition: 0.5s;
+}
+
+.round-button:hover {
+  background-color: rgb(198 63 101);
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+  color: rgb(72 68 81);
+}
+
+.text-white {
+  color: white;
+}
+
+@media only screen and (max-width: 480px){
+  .round-button {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
