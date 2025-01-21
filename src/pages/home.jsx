@@ -133,28 +133,28 @@ function Home() {
                 <h1 class = "font-outfit"> Skill </h1>
                 <p class = "font-outfit" > Skills related to my expertise. See experience page for more. </p>
                 <div id = "home-skill-list" >
-                    <div id = "skill-tag-1" class = "home-skill-tag" style={{backgroundImage: `url('/skill-1.png')`, backgroundSize: `cover`}} 
+                    <div id = "skill-tag-1" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-1.png')`, backgroundSize: `cover`}} 
                     onMouseOver={() => skill_tag_info("skill-tag-1")} onMouseLeave={() => hide_skill_tag_info("skill-tag-1")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > Algorithm </h2>
                             <p class = "font-outfit" > This skill helps me optimize code segments, improving program performance. </p>
                         </div>
                     </div>
-                    <div id = "skill-tag-2" class = "home-skill-tag" style={{backgroundImage: `url('/skill-2.png')`, backgroundSize: `cover`}}
+                    <div id = "skill-tag-2" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-2.png')`, backgroundSize: `cover`}}
                     onMouseOver={() => skill_tag_info("skill-tag-2")} onMouseLeave={() => hide_skill_tag_info("skill-tag-2")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > Agile </h2>
                             <p class = "font-outfit" > I have some experience participating in projects applying agile model. </p>
                         </div>
                     </div>
-                    <div id = "skill-tag-3" class = "home-skill-tag" style={{backgroundImage: `url('/skill-3.png')`, backgroundSize: `cover`}}
+                    <div id = "skill-tag-3" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-3.png')`, backgroundSize: `cover`}}
                     onMouseOver={() => skill_tag_info("skill-tag-3")} onMouseLeave={() => hide_skill_tag_info("skill-tag-3")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > Node.js </h2>
                             <p class = "font-outfit" > Beginner level. I took part in a school project and was responsible for backend using nodejs. </p>
                         </div>
                     </div>
-                    <div id = "skill-tag-4" class = "home-skill-tag" style={{backgroundImage: `url('/skill-4.png')`, backgroundSize: `cover`}}
+                    <div id = "skill-tag-4" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-4.png')`, backgroundSize: `cover`}}
                     onMouseOver={() => skill_tag_info("skill-tag-4")} onMouseLeave={() => hide_skill_tag_info("skill-tag-4")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > React </h2>
