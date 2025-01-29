@@ -14,6 +14,7 @@ function NavigationBar() {
                 document.getElementById("nav-bar").style.backgroundColor = "rgba(236, 242, 249, 1)";
             }
         });
+        window.scrollTo(0, 0);
     });
 
     function show_menu() {
@@ -32,11 +33,11 @@ function NavigationBar() {
                 <div class = "nav-tab-com-responsive" onClick={show_menu} > <img src = "menu_icon.jpg" style={{width:"30px"}} alt = "" /> </div>
                 <div id = "second-wrapper">
                     <p onClick={hide_menu}> ✖ </p>
-                    <Link class = "nav-tab font-outfit"> Home </Link>
-                    <Link class = "nav-tab font-outfit"> Experience </Link>
-                    <Link class = "nav-tab font-outfit"> Achievement </Link>
-                    <Link class = "nav-tab font-outfit"> Certificate </Link>
-                    <Link class = "nav-tab font-outfit"> Contact </Link>
+                    <Link class = "nav-tab font-outfit" to = "/" > Home </Link>
+                    <Link class = "nav-tab font-outfit" to = "/experience" > Experience </Link>
+                    <Link class = "nav-tab font-outfit" to = "/achievement" > Achievement </Link>
+                    <Link class = "nav-tab font-outfit" to = "/certificate" > Certificate </Link>
+                    <Link class = "nav-tab font-outfit" to = "/contact" > Contact </Link>
                 </div>
             </nav>
         </>

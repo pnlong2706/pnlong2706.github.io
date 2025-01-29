@@ -1,0 +1,114 @@
+#achvm {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    --img_w: max(40vw, 350px);
+    /* margin-top: 20vh; */
+}
+
+.achvm-container {
+    display: flex;
+    flex-direction: row-reverse;
+    /* border: 2px solid red; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: max(8vh, 8vw);
+}
+
+.achvm-container > .achvm-info {
+    width: var(--img_w);
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.img-slider{
+    position: relative;
+    width: var(--img_w);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.10) 4px 4px 8px;
+    /* border: 2px solid red; */
+}
+
+.list-img-slide {
+    /* width: max(30vw, 300px); */
+    display: flex;
+    position: relative;
+    transition: all 0.4s;
+    left:  var(--img_w_0);
+}
+
+.list-img-slide > img {
+    width: var(--img_w);
+}
+
+.img-slider > .slide-left, .img-slider > .slide-right  {
+    position: absolute;
+    top: 0px;
+    /* z-index: 4;  */
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    width: 15%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.img-slider > .slide-left:hover, .img-slider > .slide-right:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.img-slider > button {
+    /* justify-content: center; */
+    justify-items: center;
+}
+
+.img-slider > button > p {
+    color: white;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.img-slider > .slide-right {
+    right: 0px;
+}
+
+.img-slider > .slide-left {
+    opacity: 0;
+}
+
+#achvm > h1 {
+    font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 480px){
+    .img-slider > button > p {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+    }
+
+    #achvm > h1 {
+        font-size: 2rem;
+    }
+}
+
+.achvm-info > p {
+    text-align: justify;
+}
+
+@media only screen and (min-width: 480px){
+    .achvm-info > h2 {
+        font-size: 3rem;
+    }
+
+    .achvm-info > p {
+        font-size: 1.3rem;
+    }
+}

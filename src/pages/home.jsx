@@ -1,4 +1,5 @@
 import NavigationBar from "../components/nav_bar";
+import Footer from "../components/footer";
 
 function Home() {
 
@@ -13,44 +14,14 @@ function Home() {
         }
     }
 
-    function rotate_cover_img() {
-        document.getElementById("img-avatar-back").style.transform = "rotateY(360deg)";
-        document.getElementById("img-avatar").style.transform = "rotateY(180deg)";
+    function flip(idF, idB) {
+        document.getElementById(idB).style.transform = "rotateY(360deg)";
+        document.getElementById(idF).style.transform = "rotateY(180deg)";
     }
 
-    function rotate_cover_img_2() {
-        document.getElementById("img-avatar").style.transform = "rotateY(0deg)";
-        document.getElementById("img-avatar-back").style.transform = "rotateY(180deg)";
-    }
-
-    function rotate_cover_img_3() {
-        document.getElementById("home-about-img-back").style.transform = "rotateY(360deg)";
-        document.getElementById("home-about-img-front").style.transform = "rotateY(180deg)";
-    }
-
-    function rotate_cover_img_4() {
-        document.getElementById("home-about-img-front").style.transform = "rotateY(0deg)";
-        document.getElementById("home-about-img-back").style.transform = "rotateY(180deg)";
-    }
-
-    function rotate_cover_img_5() {
-        document.getElementById("home-edu-1-img-back").style.transform = "rotateY(360deg)";
-        document.getElementById("home-edu-1-img-front").style.transform = "rotateY(180deg)";
-    }
-
-    function rotate_cover_img_6() {
-        document.getElementById("home-edu-1-img-front").style.transform = "rotateY(0deg)";
-        document.getElementById("home-edu-1-img-back").style.transform = "rotateY(180deg)";
-    }
-
-    function rotate_cover_img_7() {
-        document.getElementById("home-edu-2-img-back").style.transform = "rotateY(360deg)";
-        document.getElementById("home-edu-2-img-front").style.transform = "rotateY(180deg)";
-    }
-
-    function rotate_cover_img_8() {
-        document.getElementById("home-edu-2-img-front").style.transform = "rotateY(0deg)";
-        document.getElementById("home-edu-2-img-back").style.transform = "rotateY(180deg)";
+    function re_flip(idF, idB) {
+        document.getElementById(idF).style.transform = "rotateY(0deg)";
+        document.getElementById(idB).style.transform = "rotateY(180deg)";
     }
 
     function skill_tag_info(id) {
@@ -73,8 +44,8 @@ function Home() {
             <div class = "bg-blueberry-milk font-outfit" id = "home-background" > 
                 <img class = "rotating" id = "home-cover-img" src="cover.png" alt=""/>
                 <div id = "home-title" class = "font-outfit">
-                    <img id = "img-avatar-back" src = "dragon.png" alt = "avatar" onClick={rotate_cover_img_2} /> 
-                    <img id = "img-avatar" src = "cover-front.png" alt = "avatar" onClick={rotate_cover_img} /> 
+                    <img id = "img-avatar-back" src = "dragon.png" alt = "avatar" onClick={() => re_flip("img-avatar", "img-avatar-back")} /> 
+                    <img id = "img-avatar" src = "cover-front.png" alt = "avatar" onClick={() => flip("img-avatar", "img-avatar-back")} /> 
                     <h1> PHAM NGOC LONG </h1>
                     <h2 class = "text-red"> 3rd year CS student </h2>
                     <p> This is my website where you can find information about me. Specifically, the website provides information about my education, achievements, experience, skills,... </p>
@@ -83,15 +54,17 @@ function Home() {
             </div>
 
             <div id = "home-about" >
-            <div id = "home-about-info" >
+                <div id = "home-about-info" >
                     <h2 class = "font-outfit"> About me </h2>
                     <p class = "font-outfit"> I am Pham Ngoc Long, and I am currently a third-year student at Ho Chi Minh University of Technology. 
                         I am a person who likes to discover new knowledge, especially in the field of programming. Always be serious about work and study, 
                         and strive to become a good programmer in the future. </p>
                 </div>
                 <div id = "home-about-img">
-                    <img class = "home-about-img" id = "home-about-img-front" src = "card-about-front.png"  alt = "about" onClick={rotate_cover_img_3}  /> 
-                    <img class = "home-about-img" id = "home-about-img-back" src = "card-about-back.png" alt = "about"  onClick={rotate_cover_img_4} />
+                    <img class = "home-about-img" id = "home-about-img-front" src = "card-about-front.png"  alt = "about" 
+                    onClick={() => flip("home-about-img-front", "home-about-img-back")}  /> 
+                    <img class = "home-about-img" id = "home-about-img-back" src = "card-about-back.png" alt = "about"  
+                    onClick={() => re_flip("home-about-img-front", "home-about-img-back")} />
                 </div>
             </div>
 
@@ -105,8 +78,10 @@ function Home() {
                             Therefore, I have good problem solving and logical thinking skills. </p>
                     </div>
                     <div id = "home-edu-1-img" class = "home-edu-img" >
-                        <img class = "home-edu-1-img" id = "home-edu-1-img-front" src = "quochoc.png"  alt = "about" onClick={rotate_cover_img_5} /> 
-                        <img class = "home-edu-1-img" id = "home-edu-1-img-back" src = "card-about-back.png" alt = "about" onClick={rotate_cover_img_6} />
+                        <img class = "home-edu-1-img" id = "home-edu-1-img-front" src = "quochoc.png"  alt = "about" 
+                        onClick={() => flip("home-edu-1-img-front", "home-edu-1-img-back")} /> 
+                        <img class = "home-edu-1-img" id = "home-edu-1-img-back" src = "quochoc-back.png" alt = "about" 
+                        onClick={() => re_flip("home-edu-1-img-front", "home-edu-1-img-back")}  />
                     </div>
                 </div>
 
@@ -121,10 +96,11 @@ function Home() {
                     </div>
 
                     <div id = "home-edu-2-img" class = "home-edu-img">
-                        <img class = "home-edu-1-img" id = "home-edu-2-img-front" src = "hcmut.png"  alt = "about" onClick={rotate_cover_img_7} /> 
-                        <img class = "home-edu-1-img" id = "home-edu-2-img-back" src = "card-about-back.png" alt = "about" onClick={rotate_cover_img_8} />
+                        <img class = "home-edu-1-img" id = "home-edu-2-img-front" src = "hcmut.png"  alt = "about" 
+                        onClick={() => flip("home-edu-2-img-front", "home-edu-2-img-back")} /> 
+                        <img class = "home-edu-1-img" id = "home-edu-2-img-back" src = "hcmut-back.png" alt = "about" 
+                        onClick={() => re_flip("home-edu-2-img-front", "home-edu-2-img-back")} />
                     </div>
-
                     
                 </div>
             </div>
@@ -133,28 +109,28 @@ function Home() {
                 <h1 class = "font-outfit"> Skill </h1>
                 <p class = "font-outfit" > Skills related to my expertise. See experience page for more. </p>
                 <div id = "home-skill-list" >
-                    <div id = "skill-tag-1" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-1.png')`, backgroundSize: `cover`}} 
+                    <div id = "skill-tag-1" class = "home-skill-tag" style={{backgroundImage: `url('/skill-1.png')`, backgroundSize: `cover`}} 
                     onMouseOver={() => skill_tag_info("skill-tag-1")} onMouseLeave={() => hide_skill_tag_info("skill-tag-1")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > Algorithm </h2>
                             <p class = "font-outfit" > This skill helps me optimize code segments, improving program performance. </p>
                         </div>
                     </div>
-                    <div id = "skill-tag-2" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-2.png')`, backgroundSize: `cover`}}
+                    <div id = "skill-tag-2" class = "home-skill-tag" style={{backgroundImage: `url('/skill-2.png')`, backgroundSize: `cover`}}
                     onMouseOver={() => skill_tag_info("skill-tag-2")} onMouseLeave={() => hide_skill_tag_info("skill-tag-2")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > Agile </h2>
                             <p class = "font-outfit" > I have some experience participating in projects applying agile model. </p>
                         </div>
                     </div>
-                    <div id = "skill-tag-3" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-3.png')`, backgroundSize: `cover`}}
+                    <div id = "skill-tag-3" class = "home-skill-tag" style={{backgroundImage: `url('/skill-3.png')`, backgroundSize: `cover`}}
                     onMouseOver={() => skill_tag_info("skill-tag-3")} onMouseLeave={() => hide_skill_tag_info("skill-tag-3")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > Node.js </h2>
                             <p class = "font-outfit" > Beginner level. I took part in a school project and was responsible for backend using nodejs. </p>
                         </div>
                     </div>
-                    <div id = "skill-tag-4" class = "home-skill-tag" style={{backgroundImage: `url('/personal-page/skill-4.png')`, backgroundSize: `cover`}}
+                    <div id = "skill-tag-4" class = "home-skill-tag" style={{backgroundImage: `url('/skill-4.png')`, backgroundSize: `cover`}}
                     onMouseOver={() => skill_tag_info("skill-tag-4")} onMouseLeave={() => hide_skill_tag_info("skill-tag-4")} >
                         <div class = "skill-info">
                             <h2 class = "font-outfit" > React </h2>
@@ -165,7 +141,20 @@ function Home() {
             </div>
 
             <div id = "home-achv" >
-                <img src = "achvm.jpg" alt = "achv"/> 
+                
+                <img id = "home-achv-img" src = "achvm.jpg" alt = "achv" onClick={() => { 
+                    let ele = document.getElementById("home-achv-img");
+                    
+                    ele.style.opacity = "0";
+
+                    setTimeout(() => {
+                        if(ele.src.includes("achvm.jpg")) ele.src = "sv5t.jpg";
+                        else ele.src = "achvm.jpg";
+
+                        setTimeout(() => {ele.style.opacity = "1";}, 300);
+                    }, 350);
+                }} /> 
+
                 <div id = "home-achv-info">
                     <h1 class = "font-outfit" > Achievement </h1>
                     <h2 class = "font-outfit" > International Collegiate Programming Contest (ICPC) </h2>
@@ -190,14 +179,51 @@ function Home() {
                     <button class = "round-button bg-blueberry-milk" > Detail </button>
                 </div>
             </div>
-            
-            <div id = "hidden-trash">
-                <img src = "skill-1.png" alt = "none" />
-                <img src = "skill-2.png" alt = "none" />
-                <img src = "skill-3.png" alt = "none" />
-                <img src = "skill-4.png" alt = "none" />
+
+            <div id = "home-certi">
+                <h1 class = "font-outfit"> Certificate </h1>
+                <p class = "font-outfit" > Certificates related to my expertise and skills. </p>
+
+                <div id = "home-certi-list" >
+                    <div class = "home-certi-tag">
+                        <img src = "toeic.png" alt = "toeic" /> 
+                        <p class = "font-outfit"> TOEIC 925/990 Reading & Listenting </p>
+                        <a href = "https://i.ibb.co/frqnY0D/toeic.jpg" target="_blank" rel="noreferrer" 
+                        class = "font-outfit" > Show credential ⇲ </a>
+                    </div>
+                    <div class = "home-certi-tag">
+                        <img src = "coursera.png" alt = "csr" /> 
+                        <p class = "font-outfit"> Machine Learning Specialization  </p>
+                        <a href = "https://www.coursera.org/account/accomplishments/specialization/FLL3DAA6YKM7" target="_blank" rel="noreferrer" 
+                        class = "font-outfit" > Show credential ⇲ </a>
+                    </div>
+                    <div class = "home-certi-tag">
+                        <img src = "coursera.png" alt = "csr" /> 
+                        <p class = "font-outfit"> Deep Learning Specialization </p>
+                        <a href = "https://www.coursera.org/account/accomplishments/specialization/9Q2989PS43H2" target="_blank" rel="noreferrer" 
+                        class = "font-outfit" > Show credential ⇲ </a>
+                    </div>
+                </div>
             </div>
 
+            <div id = "home-contact" style={{paddingBottom:"max(10vh,10vw)"}}>
+                <div id = "home-contact-info" >
+                    <h2 class = "font-outfit"> Contact </h2>
+                    <p class = "font-outfit"> Address: 01 Ta Quang Buu, Linh Trung, Thu Duc, Ho Chi Minh City, Viet Nam </p>
+                    <p class = "font-outfit"> Email: pnlong27@gmail.com </p>
+                    <p class = "font-outfit"> Phone: +84 963 81 2245 </p>
+                    <p class = "font-outfit"> Facebook: <a href="https://www.facebook.com/Ngoclong270604" target="_blank" rel="noreferrer"  > Pham Ngoc Long ⇲ </a> </p>
+                    <p class = "font-outfit"> Linked: <a href="https://www.linkedin.com/in/long-pham-ngoc-684834174/" target="_blank" rel="noreferrer"  > Pham Ngoc Long ⇲ </a> </p>
+                </div>
+                <div id = "home-contact-img">
+                    <img class = "home-contact-img" id = "home-contact-img-front" src = "cat.png"  alt = "about" 
+                    onClick={() => flip("home-contact-img-front", "home-contact-img-back")} /> 
+                    <img class = "home-contact-img" id = "home-contact-img-back" src = "card-about-back.png" alt = "about"  
+                    onClick={() => re_flip("home-contact-img-front", "home-contact-img-back")}  />
+                </div>
+            </div>
+
+            <Footer />
         </div>
     )
 }
